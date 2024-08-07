@@ -97,7 +97,7 @@
     - article_id(기사 번호) FK not null int
     - keyword_set(키워드) text
 
-# TABLE ERD
+## TABLE ERD
 
 ![Screenshot from 2024-07-04 14-26-35.png](DB%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B5%E1%84%86%E1%85%A1%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%87%E1%85%A9%2028b63a804c6c4fe38620a55e6291e308/Screenshot_from_2024-07-04_14-26-35.png)
 <br />
