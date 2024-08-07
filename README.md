@@ -60,7 +60,46 @@
 <br />
 
 ## 🗂️ 데이터 베이스 구축
-- 내용내용내용
+# 테이블 목록
+
+- article(기사테이블)
+- stock_info(주식정보 테이블)
+- sentiment(감정분석 테이블)
+- keyword(키워드 테이블)
+
+# 테이블 구성
+
+1. article(기사테이블)
+    - id(기사 번호) PK not null int
+    - search_platform(검색 출처) varchar(16)
+    - pub_date(게시일) date
+    - title(기사 제목) varchar(128)
+    - content(기사 본문내용) text
+    - link(기사 링크) varchar(256)
+    
+2. stock_info(주식정보 테이블)
+    - id(주식정보 번호) PK not null int
+    - date(날짜) date
+    - ticker(종목) varchar(32)
+    - closing_price(종가) float
+    - volume (거래량) float
+    - daily_change_rate(전일자대비 종가증가율) float
+
+1. sentiment(감정분석 테이블)
+    - id(감정분석 번호) PK not null int
+    - article_id(기사 번호) FK not null int
+    - sentiment_from_ctext(기사제목 + 본문 분석결과)  VARCHAR(16)
+    - sentiment_from_keyword(키워드 분석결과)  VARCHAR(16)
+    - match_status(분석결과간 매칭여부)  INT
+    
+2. keyword(키워드 테이블)
+    - id(키워드 번호) PK not null int
+    - article_id(기사 번호) FK not null int
+    - keyword_set(키워드) text
+
+# TABLE ERD
+
+![Screenshot from 2024-07-04 14-26-35.png](DB%20%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B5%E1%84%86%E1%85%A1%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%87%E1%85%A9%2028b63a804c6c4fe38620a55e6291e308/Screenshot_from_2024-07-04_14-26-35.png)
 <br />
 
 ## 🗂️ 데이터 분석 및 시각화
