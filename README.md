@@ -62,7 +62,7 @@
 
 | 기존 사용 모델 | Roberta 딥러닝 모델  |
 |:--------------:|:----------------------------:|
-| ![original_model_senti_result](https://github.com/user-attachments/assets/b38b76d9-8004-44aa-9f6b-7bda3c86b52f) | ![model_fine-tuned_with_roberta_result](https://github.com/user-attachments/assets/2edfda12-e442-407f-8b51-768cbf42801e) |
+| ![original_model_senti_result](https://github.com/user-attachments/assets/b38b76d9-8004-44aa-9f6b-7bda3c86b52f) | ![model_fine-tuned_with_roberta_result](https://github.com/user-attachments/assets/92857fe1-1ffd-4798-9aa8-4c9630e45c42) |
 <br />
 
 ## 🗂️ 데이터 베이스 구축
